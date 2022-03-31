@@ -1,0 +1,11 @@
+[Unit]
+Description=Moonlight client
+[Service]
+Type=simple
+User=pi
+ExecStart=/bin/bash "/usr/bin/moonrise"
+ExecStop=/bin/bash "/usr/bin/moonset"
+Restart=always
+[Install]
+Alias=moon moonlight
+WantedBy=multi-user.target

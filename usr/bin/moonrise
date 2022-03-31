@@ -1,0 +1,2 @@
+#!/bin/bash
+moonlight stream -config "$HOME/.config/moonlight.conf" -verbose
